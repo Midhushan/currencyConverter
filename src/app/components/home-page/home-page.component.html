@@ -1,0 +1,29 @@
+<div class="container py-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">Latest Currency Exchange Rates</div>
+            <div class="card-body">
+                <table class="table caption-top">
+                    <caption>
+                      List of currencies
+                    </caption>
+                    <thead>
+                      <tr>
+                        <th scope="col">Base Currency</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let rate of rates">
+                        <td><b>1 {{ baseCurrency }} =</b></td>
+                        <td>{{ rate.symbol }}</td>
+                        <td>{{ rate.price }}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+    </div>
+
+</div>
